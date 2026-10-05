@@ -15,14 +15,20 @@
 
 The project formalizes the complete software development lifecycle, connecting requirements analysis and system modeling with practical implementation on the Super Nintendo Entertainment System (SNES) platform.
 
+The [academic project portal](https://lucianocsiqueira.github.io/tca-docs/) presents the project documentation, interactive flowcharts, final seminar slides, and video demonstrations. It supports Brazilian Portuguese and British English, automatically choosing an initial language from the browser's locale without sending location data to an external service.
+
+## GitHub Pages Deployment
+
+Every push to `main` automatically publishes the site using the workflow in `.github/workflows/deploy-pages.yml`. To enable deployment, set the repository's **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow can also be run manually from the Actions tab.
+
 ## Integrated Repository Ecosystem
 
 The project consists of three interconnected repositories:
 
 | Repository | Scope & Role | Key Technologies |
 | :--- | :--- | :--- |
-| **`tca-docs`** *(This repository)* | **Documentation Hub:** Holds formal engineering artifacts, system flowcharts, academic presentations, and validation recordings. | UML PPTX MP4 |
-| **[PinkWall](https://github.com/LucianoCSiqueira/pinkwall)** | **Final Application:** Reference SNES game inspired by Pink Floyd's *The Wall*, demonstrating practical framework usage. | Java, PVSNESLIB, 65816 Assembly |
+| **`tca-docs`** _(This repository)_ | **Documentation Hub:** Holds formal engineering artifacts, system flowcharts, academic presentations, and validation recordings. | UML PPTX MP4 |
+| **[PinkWall](https://github.com/LucianoCSiqueira/pinkwall)** | **Final Application:** Reference SNES game inspired by Pink Floyd's _The Wall_, demonstrating practical framework usage. | Java, PVSNESLIB, 65816 Assembly |
 | **[JavaSNES](https://github.com/BrunoRNS/javasnes)** | **Core Engine / Layer:** Open-source Java library and toolchain developed through continuous academic collaboration for hardware abstraction and SNES compilation. | Java 8+, C/ASM Toolchain, Emulators |
 
 ## Repository Structure
@@ -62,4 +68,4 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 - **Bruno RNS** — Co-author of TCA Artifacts and JavaSNES Lead Maintainer ([@BrunoRNS](https://github.com/BrunoRNS))
 
 - **Institution:** Instituto Federal do Paraná (IFPR) — Campus Cascavel
-- **Program:** Technical Course in Information Technology (*Técnico em Informática Integrado ao Ensino Médio*)
+- **Program:** Technical Course in Information Technology (_Técnico em Informática Integrado ao Ensino Médio_)

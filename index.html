@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#075b3b">
+    <meta
+      id="page-description"
+      name="description"
+      content="Portal acadêmico do Trabalho de Conclusão do Ciclo A do IFPR Campus Cascavel: documentação, fluxogramas, apresentação e demonstrações do PinkWall e JavaSNES."
+    >
+    <title data-i18n-title="pageTitle">TCA — Engenharia de Software e JavaSNES | IFPR Cascavel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./js/core.min.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo" data-i18n="skipLink">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="TCA IFPR — página inicial" data-i18n-aria-label="homeLabel">
+          <span class="brand-mark" aria-hidden="true">IF</span>
+          <span class="brand-copy">
+            <strong>TCA <span class="brand-divider">/</span> IFPR</strong>
+            <small>Campus Cascavel</small>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria-label="mainNavigation">
+          <a href="#projeto" data-i18n="navProject">O projeto</a>
+          <a href="#fluxogramas" data-i18n="navDiagrams">Fluxogramas</a>
+          <a href="#apresentacao" data-i18n="navPresentation">Apresentação</a>
+          <a href="#videos" data-i18n="navVideos">Vídeos</a>
+          <a class="nav-project-link" href="#ecossistema"><span data-i18n="navRelated">Projetos relacionados</span> <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="language-switch" role="group" aria-label="Idioma da página" data-i18n-aria-label="languageLabel">
+          <button type="button" data-language="pt-BR" aria-pressed="true">PT-BR</button>
+          <button type="button" data-language="en-GB" aria-pressed="false">EN-UK</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <div class="hero-content page-width">
+          <p class="eyebrow hero-eyebrow"><span></span> <span data-i18n="heroEyebrow">Trabalho de Conclusão do Ciclo A</span></p>
+          <h1 id="hero-title"><span class="hero-title-line" data-i18n="heroTitleFirst">Engenharia de software.</span><br><span data-i18n="heroTitleSecond">Do projeto ao SNES.</span></h1>
+          <p class="hero-intro" data-i18n="heroIntro">
+            Documentação acadêmica, arquitetura e demonstrações de um ciclo completo de desenvolvimento
+            de software — do levantamento de requisitos à execução no Super Nintendo.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#projeto"><span data-i18n="heroAbout">Conheça o projeto</span> <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline-light" href="#apresentacao"><span data-i18n="heroSlides">Ver apresentação</span> <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Informações acadêmicas" data-i18n-aria-label="academicInfo">
+            <span><span class="meta-dot" aria-hidden="true"></span> <span data-i18n="institution">Instituto Federal do Paraná</span></span>
+            <span data-i18n="campus">Campus Cascavel</span>
+            <span data-i18n="programme">Técnico em Informática Integrado ao Ensino Médio</span>
+          </div>
+        </div>
+        <div class="hero-index" aria-hidden="true"><span>01</span> / <span data-i18n="documentation">DOCUMENTAÇÃO</span></div>
+      </section>
+
+      <section class="project-overview section-space" id="projeto" aria-labelledby="project-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="section-number">01</span> <span data-i18n="academicPurpose">Propósito acadêmico</span></p>
+            <h2 id="project-title" data-i18n="projectHeading">Um projeto, do início ao fim.</h2>
+            <p class="section-lead" data-i18n="projectLead">
+              O TCA conecta especificações de engenharia de software a uma aplicação real. Este portal
+              reúne os artefatos técnicos, a apresentação de defesa e os registros que validam o trabalho.
+            </p>
+          </div>
+          <div class="overview-grid">
+            <article class="overview-card">
+              <span class="card-icon" aria-hidden="true">01</span>
+              <h3 data-i18n="specifyTitle">Especificar</h3>
+              <p data-i18n="specifyText">Levantamento de requisitos, planejamento e documentação das etapas do desenvolvimento.</p>
+            </article>
+            <article class="overview-card">
+              <span class="card-icon" aria-hidden="true">02</span>
+              <h3 data-i18n="modelTitle">Modelar</h3>
+              <p data-i18n="modelText">Arquitetura em camadas, fluxogramas e lógica de execução e gerenciamento de estados do jogo.</p>
+            </article>
+            <article class="overview-card">
+              <span class="card-icon" aria-hidden="true">03</span>
+              <h3 data-i18n="implementTitle">Implementar</h3>
+              <p data-i18n="implementText">Aplicação PinkWall integrada ao JavaSNES, à PVSNESLIB e à plataforma Super Nintendo.</p>
+            </article>
+            <article class="overview-card">
+              <span class="card-icon" aria-hidden="true">04</span>
+              <h3 data-i18n="validateTitle">Validar</h3>
+              <p data-i18n="validateText">Demonstrações de emulador, capturas de tela e vídeos de execução do software.</p>
+            </article>
+          </div>
+
+          <div class="architecture-note">
+            <div class="architecture-symbol" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div>
+              <p class="eyebrow" data-i18n="architectureEyebrow">Decisão arquitetural</p>
+              <h3 data-i18n="architectureTitle">Arquitetura em camadas</h3>
+              <p>
+                <span data-i18n="architectureStart">A aplicação </span><strong>PinkWall</strong><span data-i18n="architectureMiddle"> mantém sua lógica separada das camadas de tradução e abstração de hardware — </span><strong>JavaSNES</strong><span data-i18n="architectureAnd"> e </span><strong>PVSNESLIB</strong><span data-i18n="architectureEnd">. Essa organização permite estruturar e integrar o desenvolvimento para a plataforma SNES.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="diagrams-section section-space" id="fluxogramas" aria-labelledby="diagrams-title">
+        <div class="page-width">
+          <div class="section-heading heading-with-aside">
+            <div>
+              <p class="eyebrow"><span class="section-number">02</span> <span data-i18n="systemModelling">Modelagem do sistema</span></p>
+              <h2 id="diagrams-title" data-i18n="diagramsHeading">Fluxogramas &amp; arquitetura.</h2>
+              <p class="section-lead" data-i18n="diagramsLead">
+                Explore os diagramas do projeto. Selecione qualquer imagem para ampliar — os
+                fluxogramas se adaptam a telas grandes e pequenas.
+              </p>
+            </div>
+            <span class="section-aside"><span data-i18n="diagramCount">07 diagramas</span> <span aria-hidden="true">↘</span></span>
+          </div>
+          <div class="diagram-grid" id="diagram-grid"></div>
+        </div>
+      </section>
+
+      <section class="presentation-section section-space" id="apresentacao" aria-labelledby="presentation-title">
+        <div class="page-width">
+          <div class="section-heading heading-with-aside">
+            <div>
+              <p class="eyebrow"><span class="section-number">03</span> <span data-i18n="academicDefence">Defesa acadêmica</span></p>
+              <h2 id="presentation-title" data-i18n="presentationHeading">Apresentação final.</h2>
+              <p class="section-lead" data-i18n="presentationLead">
+                Slides utilizados no seminário de conclusão, em formato PDF. Navegue pelas páginas
+                ou escolha um capítulo no leitor.
+              </p>
+            </div>
+            <a class="text-link presentation-download" href="./slides/TCA.pdf" download>
+              <span data-i18n="downloadPresentation">Baixar apresentação</span> <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <div class="pdf-panel">
+            <div class="pdf-panel-heading">
+              <div class="pdf-document-icon" aria-hidden="true"><span>PDF</span></div>
+              <div>
+                <h3 data-i18n="pdfTitle">Trabalho de Conclusão do Ciclo A</h3>
+                <p><span data-i18n="finalSeminar">Seminário final</span> <span aria-hidden="true">·</span> IFPR Campus Cascavel</p>
+              </div>
+              <div class="format-links" aria-label="Outros formatos da apresentação" data-i18n-aria-label="otherFormats">
+                <a href="./slides/TCA.pptx" download>PPTX <span aria-hidden="true">↓</span></a>
+                <a href="./slides/TCA.odp" download>ODP <span aria-hidden="true">↓</span></a>
+              </div>
+            </div>
+            <div class="pdf-viewer-shell">
+              <div
+                id="pdf-viewer"
+                class="pdf-viewer"
+                role="region"
+                aria-label="Leitor da apresentação em PDF"
+                data-i18n-aria-label="pdfReader"
+                aria-describedby="pdf-status"
+              ></div>
+              <p class="pdf-status" id="pdf-status" role="status" aria-live="polite" data-i18n="pdfLoading">
+                Carregando apresentação…
+              </p>
+            </div>
+            <p class="viewer-credit">
+              <span data-i18n="integratedViewer">Leitor integrado com</span>
+              <a href="https://github.com/BrunoRNS/SimplePDFviewer" target="_blank" rel="noreferrer">SimplePDFviewer</a>.
+              <a href="./slides/TCA.pdf" target="_blank" rel="noreferrer" data-i18n="openPdfNewTab">Abrir o PDF em outra aba</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="videos-section section-space" id="videos" aria-labelledby="videos-title">
+        <div class="page-width">
+          <div class="section-heading heading-with-aside">
+            <div>
+              <p class="eyebrow"><span class="section-number">04</span> <span data-i18n="demosValidation">Demonstrações e validação</span></p>
+              <h2 id="videos-title" data-i18n="videosHeading">O projeto em execução.</h2>
+              <p class="section-lead" data-i18n="videosLead">
+                Registros do desenvolvimento e das demonstrações em emulador. Selecione um vídeo
+                para reproduzi-lo no player.
+              </p>
+            </div>
+            <span class="section-aside"><span data-i18n="videoCount">10 gravações</span> <span aria-hidden="true">↘</span></span>
+          </div>
+          <div class="video-playground">
+            <div class="video-player-column">
+              <div class="video-stage-wrap">
+                <div class="video-stage" id="video-stage">
+                  <video
+                    id="project-video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    aria-label="Vídeo de demonstração do projeto"
+                    data-i18n-aria-label="videoPlayerLabel"
+                  >
+                    <span data-i18n="videoFallback">Seu navegador não oferece suporte à reprodução de vídeo HTML5.</span>
+                  </video>
+                  <div class="video-placeholder" id="video-placeholder">
+                    <span class="play-mark" aria-hidden="true">▶</span>
+                    <span data-i18n="videoPlaceholder">Selecione uma gravação para assistir</span>
+                  </div>
+                </div>
+              </div>
+              <div class="video-now-playing">
+                <div>
+                  <p class="eyebrow" data-i18n="nowPlaying">Em reprodução</p>
+                  <h3 id="video-title" data-i18n="chooseVideo">Escolha uma demonstração</h3>
+                </div>
+                <div class="video-tools">
+                  <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" disabled>
+                    <span aria-hidden="true">◖</span> <span class="sound-label" data-i18n="enableSound">Ativar som</span>
+                  </button>
+                  <button class="fullscreen-button" id="fullscreen-button" type="button" disabled>
+                    <span data-i18n="fullscreen">Tela cheia</span> <span aria-hidden="true">⛶</span>
+                  </button>
+                </div>
+              </div>
+              <p class="video-message" id="video-message" role="status" aria-live="polite"></p>
+            </div>
+            <aside class="video-library" aria-labelledby="video-library-title">
+              <div class="library-header">
+                <div>
+                  <p class="eyebrow" data-i18n="videoLibrary">Acervo de vídeos</p>
+                  <h3 id="video-library-title" data-i18n="demonstrations">Demonstrações</h3>
+                </div>
+                <label class="search-label">
+                  <span class="visually-hidden" data-i18n="filterVideos">Filtrar demonstrações</span>
+                  <input id="video-search" type="search" placeholder="Buscar…" autocomplete="off" data-i18n-placeholder="searchVideos">
+                  <span aria-hidden="true">⌕</span>
+                </label>
+              </div>
+              <div class="video-list" id="video-list"></div>
+              <p class="no-results" id="video-no-results" hidden data-i18n="noVideosFound">Nenhuma demonstração encontrada.</p>
+            </aside>
+          </div>
+          <p class="media-note" data-i18n="mediaNote">As gravações mantêm sua proporção original; controles de volume e tela cheia estão disponíveis no player.</p>
+        </div>
+      </section>
+
+      <section class="ecosystem-section section-space" id="ecossistema" aria-labelledby="ecosystem-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="section-number">05</span> <span data-i18n="ecosystemEyebrow">Ecossistema integrado</span></p>
+            <h2 id="ecosystem-title" data-i18n="ecosystemHeading">Projetos que se conectam.</h2>
+            <p class="section-lead" data-i18n="ecosystemLead">
+              Três repositórios complementares documentam, constroem e executam o trabalho acadêmico.
+            </p>
+          </div>
+          <div class="repository-grid">
+            <article class="repository-card repository-card-current">
+              <div class="repository-topline"><span>01 / <span data-i18n="documentation">DOCUMENTAÇÃO</span></span><span class="current-label" data-i18n="thisProject">Este projeto</span></div>
+              <h3>TCA Docs</h3>
+              <p data-i18n="docsDescription">Centraliza a documentação formal de engenharia, os fluxogramas, a apresentação acadêmica e os vídeos de validação.</p>
+              <div class="technology-list"><span>UML</span><span>PPTX</span><span>MP4</span></div>
+              <a href="https://github.com/LucianoCSiqueira/tca-docs" target="_blank" rel="noreferrer" aria-label="Abrir repositório TCA Docs no GitHub" data-i18n-aria-label="tcaRepository"><span data-i18n="repository">Repositório</span> <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="repository-card">
+              <div class="repository-topline"><span>02 / <span data-i18n="finalApplication">APLICAÇÃO FINAL</span></span><span aria-hidden="true">↗</span></div>
+              <h3>PinkWall</h3>
+              <p><span data-i18n="pinkwallDescriptionStart">Jogo de referência para SNES inspirado em </span><em>The Wall</em><span data-i18n="pinkwallDescriptionEnd">, de Pink Floyd, que demonstra na prática o uso do framework.</span></p>
+              <div class="technology-list"><span>Java</span><span>PVSNESLIB</span><span>Assembly 65816</span></div>
+              <a href="https://github.com/LucianoCSiqueira/pinkwall" target="_blank" rel="noreferrer" aria-label="Abrir repositório PinkWall no GitHub" data-i18n-aria-label="pinkwallRepository"><span data-i18n="exploreProject">Conhecer o projeto</span> <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="repository-card">
+              <div class="repository-topline"><span>03 / <span data-i18n="frameworkTools">FRAMEWORK E FERRAMENTAS</span></span><span aria-hidden="true">↗</span></div>
+              <h3>JavaSNES</h3>
+              <p data-i18n="javasnesDescription">Biblioteca Java e toolchain de código aberto, desenvolvidas em colaboração acadêmica contínua para abstração de hardware e compilação para SNES.</p>
+              <div class="technology-list"><span>Java 8+</span><span>C / ASM</span><span>Emuladores</span></div>
+              <a href="https://github.com/BrunoRNS/javasnes" target="_blank" rel="noreferrer" aria-label="Abrir repositório JavaSNES no GitHub" data-i18n-aria-label="javasnesRepository"><span data-i18n="exploreProject">Conhecer o projeto</span> <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <div class="structure-note">
+            <h3 data-i18n="artifactStructure">Organização dos artefatos</h3>
+            <ul>
+              <li><code>fluxograms/</code><span data-i18n="folderDiagrams">Ciclos de execução, estados do jogo, colisões, arquitetura e integração JavaSNES.</span></li>
+              <li><code>slides/</code><span data-i18n="folderSlides">Apresentação acadêmica em PDF, PPTX e ODP.</span></li>
+              <li><code>videos/</code><span data-i18n="folderVideos">Capturas de tela e demonstrações em emulador.</span></li>
+              <li><code>README.md</code><span data-i18n="folderReadme">Índice principal e portal de navegação do projeto.</span></li>
+              <li><code>LICENSE</code><span data-i18n="folderLicence">Termos de distribuição sob a licença GNU GPL v3.0.</span></li>
+              <li><code>.gitignore</code><span data-i18n="folderGitignore">Regras para arquivos ignorados pelo Git.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="credits-section" aria-labelledby="credits-title">
+        <div class="page-width credits-inner">
+          <div class="credits-copy">
+            <p class="eyebrow"><span class="section-number">06</span> <span data-i18n="academicCredits">Créditos acadêmicos</span></p>
+            <h2 id="credits-title" data-i18n="creditsHeading">Uma construção colaborativa.</h2>
+            <p data-i18n="creditsText">
+              Desenvolvido no Curso Técnico em Informática Integrado ao Ensino Médio do
+              Instituto Federal do Paraná — Campus Cascavel.
+            </p>
+            <a class="license-link" href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noreferrer">
+              <span data-i18n="licence">Licenciado sob GNU GPL v3.0</span> <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="author-list">
+            <article class="author-card">
+              <span class="author-initials" aria-hidden="true">LC</span>
+              <div>
+                <a href="https://github.com/LucianoCSiqueira" target="_blank" rel="noreferrer">Luciano C. Siqueira <span aria-hidden="true">↗</span></a>
+                <p data-i18n="lucianoRole">Liderança do projeto, desenvolvimento PinkWall e co-manutenção JavaSNES</p>
+              </div>
+            </article>
+            <article class="author-card">
+              <span class="author-initials" aria-hidden="true">BR</span>
+              <div>
+                <a href="https://github.com/BrunoRNS" target="_blank" rel="noreferrer">Bruno RNS <span aria-hidden="true">↗</span></a>
+                <p data-i18n="brunoRole">Coautoria dos artefatos TCA e liderança de manutenção JavaSNES</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="footer-brand" href="#inicio">TCA <span>/</span> IFPR</a>
+        <p><span data-i18n="footerTitle">Trabalho de Conclusão do Ciclo A</span> <span aria-hidden="true">·</span> <span data-i18n="campus">Campus Cascavel</span></p>
+        <a href="https://github.com/LucianoCSiqueira/tca-docs" target="_blank" rel="noreferrer"><span data-i18n="viewRepository">Ver repositório</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+
+    <dialog class="image-dialog" id="image-dialog" aria-label="Fluxograma ampliado" data-i18n-aria-label="enlargedDiagram">
+      <div class="image-dialog-toolbar">
+        <h2 id="image-dialog-title"></h2>
+        <div>
+          <button id="image-zoom-out" type="button" aria-label="Reduzir zoom" title="Reduzir zoom" data-i18n-aria-label="zoomOut" data-i18n-title="zoomOut">−</button>
+          <output id="image-zoom-level" aria-live="polite">100%</output>
+          <button id="image-zoom-in" type="button" aria-label="Aumentar zoom" title="Aumentar zoom" data-i18n-aria-label="zoomIn" data-i18n-title="zoomIn">+</button>
+          <button id="image-zoom-reset" type="button" data-i18n="resetZoom">Ajustar</button>
+          <button id="image-fullscreen" type="button"><span data-i18n="fullscreen">Tela cheia</span> <span aria-hidden="true">⛶</span></button>
+          <button class="dialog-close" id="image-dialog-close" type="button" aria-label="Fechar imagem" data-i18n-aria-label="closeImage">×</button>
+        </div>
+      </div>
+      <div class="image-dialog-viewport" id="image-dialog-viewport">
+        <div class="image-dialog-canvas" id="image-dialog-canvas">
+          <img id="dialog-image" alt="">
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
